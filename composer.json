@@ -7,11 +7,13 @@
     "authors": [
         {
             "name": "Marijn van der Werf",
-            "email": "mail@marijnvdwerf.nl"
+            "email": "mail@marijnvdwerf.nl",
+            "homepage": "http://marijnvdwerf.nl"
         }
     ],
 
     "require": {
+        "php": ">=5.4.0",
         "monolog/monolog": "1.*"
     },
 
