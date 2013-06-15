@@ -97,7 +97,7 @@ class HtmlFormatter implements FormatterInterface {
     public function format(array $record) {
         ob_start();
         var_dump($record);
-        $varDump = ob_get_flush();
+        $varDump = ob_get_clean();
 
         // Make sure var_dump is not overridden by Xdebug before tweaking its output.
         // Note that all truthy INI values ("On", "true", 1) are returned as "1" by ini_get().
