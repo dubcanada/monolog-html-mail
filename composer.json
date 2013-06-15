@@ -21,12 +21,5 @@
         "psr-0": {
             "MarijnvdWerf\\Monolog": "src/"
         }
-    },
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/marijnvdwerf/monolog-html-mail"
-        }
-    ]
+    }
 }
