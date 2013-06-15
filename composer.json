@@ -1,0 +1,30 @@
+{
+    "name": "marijnvdwerf/monolog-html-mail",
+    "description": "Html mail handler for Monolog",
+    "type": "library",
+    "keywords": ["monolog", "logging"],
+
+    "authors": [
+        {
+            "name": "Marijn van der Werf",
+            "email": "mail@marijnvdwerf.nl"
+        }
+    ],
+
+    "require": {
+        "monolog/monolog": "1.*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "MarijnvdWerf\\Monolog": "src/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/marijnvdwerf/monolog-html-mail"
+        }
+    ]
+}
