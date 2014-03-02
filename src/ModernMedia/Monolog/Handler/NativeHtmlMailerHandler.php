@@ -1,6 +1,6 @@
 <?php
 
-namespace MarijnvdWerf\Monolog\Handler;
+namespace ModernMedia\Monolog\Handler;
 
 use Monolog\Handler\NativeMailerHandler;
 
@@ -10,9 +10,9 @@ use Monolog\Handler\NativeMailerHandler;
  */
 class NativeHtmlMailerHandler extends NativeMailerHandler {
 
-    protected $headers = [
+    protected $headers = array(
         'MIME-Version: 1.0',
         'Content-Type: text/html; charset="utf8"'
-    ];
+    );
 
 }

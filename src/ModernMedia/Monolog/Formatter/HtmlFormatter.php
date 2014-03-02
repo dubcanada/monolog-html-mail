@@ -10,34 +10,34 @@ use Monolog\Logger;
  * @package ModernMedia\Monolog\Formatter
  */
 class HtmlFormatter implements FormatterInterface {
-    protected $styles = [
-        'table' => [
+    protected $styles = array(
+        'table' => array(
             'max-width: 100%;',
             'background-color: transparent;',
             'border-collapse: collapse;',
             'border-spacing: 0;',
-        ],
-        'td' => [
+        ),
+        'td' => array(
             'padding: 4px 5px;',
             'line-height: 20px;',
             'text-align: left;',
             'vertical-align: top;',
             'border-top: 1px solid #dddddd;'
-        ],
-        'pre,code' => [
+        ),
+        'pre,code' => array(
             'padding: 0 3px 2px;',
             'font-size: 12px;',
             'color: #333333;',
             'border-radius: 3px;'
-        ],
-        'code' => [
+        ),
+        'code' => array(
             'padding: 2px 4px;',
             'color: #d14;',
             'white-space: nowrap;',
             'background-color: #f7f7f9;',
             'border: 1px solid #e1e1e8;'
-        ],
-        'pre' => [
+        ),
+        'pre' => array(
             'display: block;',
             'padding: 9.5px;',
             'margin: 0 0 10px;',
@@ -51,8 +51,8 @@ class HtmlFormatter implements FormatterInterface {
             'border: 1px solid #ccc;',
             'border: 1px solid rgba(0, 0, 0, 0.15);',
             'border-radius: 4px;'
-        ],
-        'label,badge' => [
+        ),
+        'label,badge' => array(
             'display: inline-block;',
             'padding: 2px 4px;',
             'font-weight: bold;',
@@ -61,15 +61,15 @@ class HtmlFormatter implements FormatterInterface {
             'white-space: nowrap;',
             'vertical-align: baseline;',
             'background-color: #999999;'
-        ],
-        'label' => [
+        ),
+        'label' => array(
             'border-radius: 3px;'
-        ],
-        'badge' => [
+        ),
+        'badge' => array(
             'padding-right: 9px;',
             'padding-left: 9px;',
             'border-radius: 9px;'
-        ]
+        )
     ];
 
     /**
@@ -79,7 +79,7 @@ class HtmlFormatter implements FormatterInterface {
      * @return mixed The formatted set of records
      */
     public function formatBatch(array $records) {
-        $output = [];
+        $output = array();
 
         foreach($records as $record) {
             $output[] = $this->format($record);
@@ -148,7 +148,7 @@ class HtmlFormatter implements FormatterInterface {
      * @return string
      */
     protected function getStyle($type) {
-        $outputStyles = [];
+        $outputStyles = array();
         foreach($this->styles as $el => $styles) {
             if(in_array($type, explode(',', $el))) {
                 $outputStyles = array_merge($outputStyles, $styles);
