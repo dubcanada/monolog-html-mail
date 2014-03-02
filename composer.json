@@ -1,10 +1,13 @@
 {
-    "name": "marijnvdwerf/monolog-html-mail",
+    "name": "modernmedia/monolog-html-mail",
     "description": "Html mail handler for Monolog",
     "type": "library",
     "keywords": ["monolog", "logging"],
 
     "authors": [
+        {
+            "name": "Steven Verbeek"
+        }
         {
             "name": "Marijn van der Werf",
             "email": "mail@marijnvdwerf.nl",
@@ -13,13 +16,13 @@
     ],
 
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.3.0",
         "monolog/monolog": "1.*"
     },
 
     "autoload": {
         "psr-0": {
-            "MarijnvdWerf\\Monolog": "src/"
+            "ModernMedia\\Monolog": "src/"
         }
     }
 }

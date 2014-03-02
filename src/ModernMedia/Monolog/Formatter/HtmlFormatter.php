@@ -1,13 +1,13 @@
 <?php
 
-namespace MarijnvdWerf\Monolog\Formatter;
+namespace ModernMedia\Monolog\Formatter;
 
 use Monolog\Formatter\FormatterInterface;
 use Monolog\Logger;
 
 /**
  * Class HtmlFormatter
- * @package MarijnvdWerf\Monolog\Formatter
+ * @package ModernMedia\Monolog\Formatter
  */
 class HtmlFormatter implements FormatterInterface {
     protected $styles = [
