@@ -109,7 +109,7 @@ class HtmlFormatter implements FormatterInterface {
             $varDump = str_replace("class='xdebug-var-dump'", 'style="' . $this->getStyle('pre') . '"', $varDump);
         }
 
-        $output = [
+        $output = array(
             '<html xmlns="http://www.w3.org/1999/xhtml">',
             '<head>',
             '    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />',
@@ -123,7 +123,7 @@ class HtmlFormatter implements FormatterInterface {
             '        </span>',
             '    </h1>',
             '    <pre>' . $varDump . '</pre>'
-        ];
+        );
 
         if(isset($record['extra'])) {
             $output[] = '   <table style="' . $this->getStyle('table') . '">';
