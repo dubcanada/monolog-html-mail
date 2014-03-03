@@ -70,7 +70,7 @@ class HtmlFormatter implements FormatterInterface {
             'padding-left: 9px;',
             'border-radius: 9px;'
         )
-    ];
+    );
 
     /**
      * Formats a set of log records.
